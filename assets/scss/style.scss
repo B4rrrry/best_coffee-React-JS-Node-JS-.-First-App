@@ -1,0 +1,16 @@
+/* Specifications */
+@import "./variables";
+html {
+  scroll-behavior: smooth;
+  font-family: $gotham;
+}
+a {
+  text-decoration: none !important;
+  color:inherit;
+  &:hover {
+    color:inherit;
+  }
+}
+/* Specifications end */
+@import "./components/header";
+@import "./components/offer";
