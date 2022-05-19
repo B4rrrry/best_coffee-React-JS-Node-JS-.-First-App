@@ -6,11 +6,22 @@ html {
 }
 a {
   text-decoration: none !important;
-  color:inherit;
+  color: inherit;
   &:hover {
-    color:inherit;
+    color: inherit;
   }
+}
+.title {
+  font-family: $plumb;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 112.7%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
 }
 /* Specifications end */
 @import "./components/header";
 @import "./components/offer";
+@import "./components/weeks";
+@import "./components/product";

@@ -66,12 +66,16 @@
         border: 1px solid #fff;
         box-shadow: 0 0 33px (0deg 0% 100% / 69%);
         color: #000;
+        svg path {
+          filter: invert(100%);
+        }
       }
     }
     &-img {
       width: 46px;
       height: 46px;
       margin-right: 24px;
+      filter: invert(100%);
     }
   }
 }
