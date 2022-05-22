@@ -6,14 +6,63 @@
     margin-bottom: 60px;
   }
   &-products {
+    margin-right: 30px;
     &__list {
-      margin-right: 30px;
       &-item {
         margin-right: 30px;
         &:last-child {
           margin-right: 0;
         }
       }
+    }
+  }
+  &-articles {
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__subtitle {
+      width: 240px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 112.7%;
+      letter-spacing: -0.04em;
+      text-transform: lowercase;
+      margin-bottom: 19px;
+    }
+    &__item {
+      width: 310px;
+      height: 230px;
+      margin-bottom: 30px;
+      position: relative;
+      transition: all 0.5s ease;
+      &:hover {
+        &::before {
+          opacity: 0.6;
+        }
+      }
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.5s ease;
+        background-color: #000;
+        opacity: 0.4;
+      }
+    }
+    &__link {
+      font-family: $gotham;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 112.7%;
+      letter-spacing: -0.04em;
+      text-transform: lowercase;
+      color: #000000;
     }
   }
 }

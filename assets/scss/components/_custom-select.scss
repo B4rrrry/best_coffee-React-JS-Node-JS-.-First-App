@@ -1,0 +1,78 @@
+@import "../variables";
+.custom-selector {
+  min-width: 150px;
+  width: fit-content;
+  &--roasting {
+    width: 180px;
+  }
+  &--active {
+    .custom-selector {
+      position: relative;
+      &__top {
+        border-color: #000;
+        border-width: 2px;
+      }
+      &__list {
+        display: block;
+        position: absolute;
+      }
+    }
+  }
+  &__value {
+    width: 150px;
+    height: 16px;
+    text-overflow: ellipsis;  
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: $gotham;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    text-overflow: ellipsis;
+    &--selected {
+      color:#000;
+    }
+  }
+  &__arrow {
+    margin-top: 5px;
+    margin-left: auto;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #00000080;
+    cursor: pointer;
+  }
+  &__list {
+    background: #ffffff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    font-family: $gotham;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 11px;
+    text-align: center;
+    color: #000000;
+    display: none;
+    z-index: 1000;
+  }
+  &__item {
+    margin-bottom: 20px;
+    cursor: pointer;
+    &:hover {
+      color: #9f9a9a;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__text {
+    text-align: left;
+  }
+}

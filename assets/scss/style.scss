@@ -15,13 +15,30 @@ a {
   font-family: $plumb;
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 30px;
   line-height: 112.7%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
+}
+.wrap {
+  display: flex;
 }
 /* Specifications end */
 @import "./components/header";
 @import "./components/offer";
 @import "./components/weeks";
 @import "./components/product";
+@import "./components/article";
+@import "./components/filters";
+@import "./components/info";
+@import "./components/reviews";
+@import "./components/subs";
+@import "./components/footer";
+@import "./components/socials";
+// catalog 
+@import "./components/catalog";
+// catalog end
+
+// other 
+@import "./components/custom-select";
+// other 
