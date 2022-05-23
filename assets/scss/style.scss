@@ -15,7 +15,7 @@ a {
   font-family: $plumb;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 112.7%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
@@ -38,7 +38,18 @@ a {
 // catalog 
 @import "./components/catalog";
 // catalog end
-
+// how article 
+@import "./components/how-article";
+// how article end
+// articles 
+@import "./components/articles";
+// articles 
+// basket 
+@import "./components/basket";
+// basket 
+// favorites
+@import "./components/favorites";
+// favorites
 // other 
 @import "./components/custom-select";
 // other 

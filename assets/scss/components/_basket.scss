@@ -1,0 +1,220 @@
+@import "../variables";
+.basket {
+  margin-top: 240px;
+  padding-bottom: 100px;
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__form {
+    &-row {
+      display: flex;
+      margin-bottom: 50px;
+    }
+    &-info {
+      width: 440px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-wrap {
+      padding: 40px;
+      background-color: #262323;
+      margin-right: 30px;
+    }
+    &-title {
+      font-family: $plumb;
+      color: #fff;
+      margin-bottom: 30px;
+    }
+    &-input {
+      width: 200px;
+      padding-bottom: 20px;
+      outline: none !important;
+      border: 0;
+      border-bottom: 1px solid #fff;
+      color: #fff;
+      font-family: $gotham;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 18px;
+      background-color: transparent;
+      margin-right: 20px;
+      &:nth-child(2n + 2) {
+        margin-right: 0;
+      }
+      &:placeholder {
+        color: #656464;
+      }
+    }
+  }
+  &__list {
+    margin-bottom: 50px;
+    &-wrap {
+      margin-top: 30px;
+    }
+    &-item {
+      display: flex;
+      padding-bottom: 30px;
+      border-bottom: 1px solid rgb(216, 216, 216);
+      margin-bottom: 50px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-img {
+      width: 90px;
+      height: 90px;
+      margin-right: 20px;
+    }
+    &-top {
+      display: flex;
+      margin-bottom: 15px;
+      margin-top: -7px;
+    }
+    &-body {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    &-name {
+      font-family: $gotham;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+      color: rgb(79, 79, 79);
+      display: block;
+      margin-right: 150px;
+      text-decoration: underline !important;
+    }
+    &-count {
+      width: 25px;
+      height: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-color: transparent;
+      border: 0;
+      margin-right: 5px;
+      &-value {
+        font-family: $gotham;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 112.7%;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        color: #000000;
+      }
+      span {
+        width: 14px;
+        height: 2px;
+        background-color: #000;
+        border-radius: 5px;
+        position: absolute;
+      }
+      &--plus {
+        margin-right: 0;
+        margin-left: 5px;
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            border-radius: 5px;
+            transform: rotate(-90deg);
+            position: absolute;
+          }
+        }
+      }
+      &-wrap {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+      }
+    }
+    &-price {
+      font-family: $gotham;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px;
+      color: rgb(79, 79, 79);
+    }
+    &-weight {
+      font-family: $gotham;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 112.7%;
+      letter-spacing: -0.04em;
+      color: #000000;
+      margin-right: 10px;
+    }
+    &-del {
+      font-family: $gotham;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 112.7%;
+      letter-spacing: -0.04em;
+      color: #000000;
+      background-color: transparent;
+      border: 0;
+    }
+  }
+  &__comment {
+    width: 100%;
+    height: 150px;
+    padding: 16px 20px;
+    border-color: #9d9d9d;
+    font-family: $gotham;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112.7%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    resize: none;
+    outline: none;
+  }
+  &__order {
+    background-color: #f6f6f6;
+    width: 700px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+
+    &-price {
+      font-family: $gotham;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 112.7%;
+      letter-spacing: -0.04em;
+      color: #000000;
+      margin-right: auto;
+      span {
+        font-weight: 500;
+      }
+    }
+    &-sub {
+      width: 200px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      font-family: $gotham;
+      background-color: #202020;
+      border-radius: 30px;
+      color: #fff;
+      transition: all 0.4s ease;
+      &:hover {
+        background-color: #000;
+      }
+    }
+  }
+}
