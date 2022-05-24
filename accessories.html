@@ -28,15 +28,17 @@
                   <a href="#" class="header-top__link">8 (800) 333-49-80</a>
                 </li>
                 <li class="header-top__item">
-                  <a href="#" class="header-top__link">Как выбрать кофе?</a>
+                  <a href="./how_article.html" class="header-top__link">Как выбрать кофе?</a>
                 </li>
                 <li class="header-top__item">
-                  <a href="#" class="header-top__link">Как приготовить?</a>
+                  <a href="./articles.html" class="header-top__link">Как приготовить?</a>
                 </li>
               </ul>
               <ul class="header-top__menu">
-                <li class="header-top__menu-item">
-                  <button class="header-top__menu-btn header-top__menu-btn--login">
+                <li class="header-top__menu-item header-top__menu-item--login">
+                  <button
+                    class="header-top__menu-btn header-top__menu-btn--login"
+                  >
                     <span class="header-top__menu-btn--icon">
                       <svg
                         width="13"
@@ -65,12 +67,26 @@
                         />
                       </svg>
                     </span>
-
                     Вход
                   </button>
+                  <div class="modal-auth">
+                    <p class="modal-auth__title">Вход на сайт</p>
+                    <div class="modal-auth__close">
+                      <span></span>
+                    </div>
+                    <form action="" class="modal-auth__form">
+                      <label for="" class="modal-auth__label"
+                        ><input type="text" placeholder="E-mail" class="modal-auth__input"
+                      /></label>
+                      <label for="" class="modal-auth__label"
+                      ><input type="password" placeholder="Пароль" class="modal-auth__input"
+                    /></label>
+                    <input type="submit" value="Войти" class="modal-auth__sub">
+                    </form>
+                  </div>
                 </li>
                 <li class="header-top__menu-item">
-                  <button class="header-top__menu-btn">Регистрация</button>
+                  <a href="./reg.html" class="header-top__menu-btn">Регистрация</a href="./reg.html">
                 </li>
               </ul>
             </div>
@@ -97,10 +113,14 @@
                     /></a>
                     <ul class="header__nav-subnav header__subnav">
                       <li class="header__subnav-item">
-                        <a href="./catalog.html" class="header__subnav-link">Кофе</a>
+                        <a href="./catalog.html" class="header__subnav-link"
+                          >Кофе</a
+                        >
                       </li>
                       <li class="header__subnav-item">
-                        <a href="./accessories.html" class="header__subnav-link">Аксессуары</a>
+                        <a href="./accessories.html" class="header__subnav-link"
+                          >Аксессуары</a
+                        >
                       </li>
                     </ul>
                   </li>
@@ -108,7 +128,7 @@
                     <a href="#" class="header__nav-link">Отзывы</a>
                   </li>
                   <li class="header__nav-item">
-                    <a href="#" class="header__nav-link"
+                    <a href="./articles.html" class="header__nav-link"
                       >Читать
                       <img
                         src="assets/img/header/arrow.svg"
@@ -119,12 +139,12 @@
                       class="header__nav-subnav header__subnav header__subnav--read"
                     >
                       <li class="header__subnav-item">
-                        <a href="#" class="header__subnav-link"
+                        <a href="./articles.html" class="header__subnav-link"
                           >Журнал о кофе</a
                         >
                       </li>
                       <li class="header__subnav-item">
-                        <a href="#" class="header__subnav-link"
+                        <a href="./how_article.html" class="header__subnav-link"
                           >Как выбрать кофе?</a
                         >
                       </li>
@@ -137,7 +157,7 @@
               </nav>
               <ul class="header__btns">
                 <li class="header__btns-item">
-                  <a href="#" class="header__btns-link">
+                  <a href="./favorites.html" class="header__btns-link">
                     <img
                       src="assets/img/header/fav.svg"
                       alt="Favorites"
@@ -146,7 +166,7 @@
                   </a>
                 </li>
                 <li class="header__btns-item">
-                  <a href="#" class="header__btns-link">
+                  <a href="./basket.html" class="header__btns-link">
                     <img
                       src="assets/img/header/basket.svg"
                       alt="Basket"

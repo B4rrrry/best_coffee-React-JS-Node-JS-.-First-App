@@ -54,6 +54,9 @@
       color: #000000;
       &-item {
         margin-right: 10px;
+        &--login {
+          position: relative;
+        }
         &:last-child {
           margin-right: 0;
         }
