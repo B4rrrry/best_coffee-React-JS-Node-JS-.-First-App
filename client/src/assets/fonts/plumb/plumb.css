@@ -1,0 +1,15 @@
+@font-face {font-family: "PlumbCondensed";
+  src:
+  url("./PlumbCondensed Regular.woff2") format("woff2"), /* chrome、firefox */
+  url("./PlumbCondensed Regular.woff") format("woff"), /* chrome、firefox */
+  url("./PlumbCondensed Regular.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  font-weight: 400;
+}
+
+@font-face {font-family: "PlumbCondensed"; 
+  src:
+  url("PlumbCondensed\ Bold.woff2") format("woff2"), /* chrome、firefox */
+  url("PlumbCondensed\ Bold.woff") format("woff"), /* chrome、firefox */
+  url("PlumbCondensed\ Bold.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  font-weight: bold;
+}

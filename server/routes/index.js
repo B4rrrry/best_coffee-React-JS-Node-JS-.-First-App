@@ -1,0 +1,31 @@
+const Router = require('express');
+const router = new Router();
+const backCallsRouter = require('./backCallsRouter');
+const basketRouter = require('./basketRouter');
+const commentsRouter = require('./commentsRouter');
+const favoritesRouter = require('./favoritesRouter');
+const forWhatRouter = require('./forWhatRouter');
+const ordersRouter = require('./ordersRouter');
+const productsRouter = require('./productsRouter');
+const reviewsRouter = require('./reviewsRouter');
+const rubricsRouter = require('./rubricsRouter');
+const subsRouter = require('./subsRouter');
+const typeRouter = require('./typeRouter');
+const usersRouter = require('./usersRouter');
+const accessoriesRouter = require('./accessoriesRouter');
+
+router.use('/calls', backCallsRouter);
+router.use('/basket', basketRouter);
+router.use('/comments', commentsRouter);
+router.use('/favorites', favoritesRouter);
+router.use('/forwhat', forWhatRouter);
+router.use('/orders', ordersRouter);
+router.use('/products', productsRouter);
+router.use('/reviews', reviewsRouter);
+router.use('/rubrics', rubricsRouter);
+router.use('/subs', subsRouter);
+router.use('/type', typeRouter);
+router.use('/users', usersRouter);
+router.use('/accessories', accessoriesRouter);
+
+module.exports = router;

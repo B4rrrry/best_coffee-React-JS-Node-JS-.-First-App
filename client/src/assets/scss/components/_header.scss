@@ -1,0 +1,229 @@
+@import "../variables";
+.header {
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: #fff;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #999999;
+    top: 64px;
+  }
+  &-top {
+    display: flex;
+    margin-bottom: 24px;
+    &__list {
+      display: flex;
+      align-items: center;
+      font-family: $gotham;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 112.7%;
+      letter-spacing: -0.04em;
+      margin-right: auto;
+    }
+    &__item {
+      margin-right: 35px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__link {
+      color: $black;
+      span {
+        display: block;
+      }
+    }
+    &__menu {
+      display: flex;
+      align-items: center;
+      font-family: $gotham;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 112.7%;
+      letter-spacing: -0.04em;
+      color: #000000;
+      &-item {
+        margin-right: 10px;
+        &--login {
+          position: relative;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      &-btn {
+        background-color: transparent;
+        border: 0;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        outline: none !important;
+        &--login {
+          transition: all 0.4s ease;
+          &:hover {
+            span {
+              background-color: #ebebeb;  
+            }
+          }
+        }
+        &--icon {
+          width: 32px;
+          height: 32px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #f2f2f2;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        &--auth {
+          margin-left: 1px;
+        }
+      }
+    }
+  }
+  &-bot {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 62px;
+    &-img {
+      width: 62px;
+      height: 46px;
+      margin-right: 20px;
+    }
+    &-text {
+      font-family: $gotham;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 112.7%;
+      span {
+        display: block;
+      }
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    font-family: $gotham;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 112.7%;
+    margin-top: 10px;
+    &-item {
+      margin-right: 45px;
+      position: relative;
+      padding-bottom: 10px;
+      &:hover {
+        .header__subnav {
+          display: block;
+        }
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-link {
+      display: flex;
+      align-items: center;
+      color: $black;
+    }
+    &-arrow {
+      margin-left: 8px;
+    }
+  }
+  &__subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding: 15px 20px;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    border-top: 2px solid #000;
+    font-size: 13px;
+    font-family: $gotham;
+    font-weight: 400;
+    &::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-left: 2px solid #000;
+      border-top: 2px solid #000;
+      display: block;
+      position: absolute;
+      bottom: calc(100% - 2px);
+      left: 15px;
+      margin: auto;
+      transform: rotate(45deg);
+      background-color: #fff;
+    }
+    &--read {
+      width: 190px;
+    }
+    &-item {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-link {
+      color: $black;
+      opacity: 0.6;
+      transition: all 0.5s ease;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &__btns {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      background-color: #999999;
+      border-radius: 50%;
+    }
+    &-img {
+      width: 18px;
+      height: 18px;
+    }
+    &-basket {
+      font-family: $gotham;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 112.7%;
+      letter-spacing: -0.04em;
+      margin-left: 12px;
+    }
+  }
+}

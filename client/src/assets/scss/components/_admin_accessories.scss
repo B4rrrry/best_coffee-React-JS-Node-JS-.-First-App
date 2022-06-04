@@ -1,0 +1,19 @@
+@import "../variables";
+.accessories {
+  padding-bottom: 150px;
+  &-form {
+    &__title {
+      font-family: $plumb;
+      margin-bottom: 50px;
+    }
+    &__text {
+      font-family: "Gotham Pro";
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    &__label {
+      margin-bottom: 30px;
+    }
+  }
+}

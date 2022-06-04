@@ -1,0 +1,23 @@
+.preloader {
+  max-width: 1000px;
+  &__wrap {
+    height: 100vh;
+    width: 100%;
+    z-index: 100001;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+    &--active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  
+}

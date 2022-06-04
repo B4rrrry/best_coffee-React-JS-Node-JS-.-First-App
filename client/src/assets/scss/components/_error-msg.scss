@@ -1,0 +1,26 @@
+@import "../variables";
+.error {
+  &__wrap {
+    display: flex;
+    margin: 0 auto;
+  }
+  &__img {
+    width: 150px;
+    margin-right: 50px;
+  }
+  &__title {
+    width: 345px;
+    font-family: $plumb;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-family: $gotham;
+    width: 360px;
+    font-weight: 400;
+  }
+  &__link {
+    text-decoration: underline;
+  }
+}

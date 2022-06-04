@@ -1,0 +1,14 @@
+export const  MAIN = '/';
+export const ACCESSORIES = '/accessories';
+export const ARTICLES = '/articles';
+export const BASKET = '/basket';
+export const CATALOG = '/catalog';
+export const FAVORITES = '/favorites';
+export const HOW_ARTICLE = '/how-article';
+export const REGISTRATION = '/registration';
+export const ADMIN_PANEL_ACCESSORIES = '/admin/accessories';
+export const ADMIN_PANEL_COFFEE = '/admin/coffee';
+export const ADMIN_PANEL_ORDERS = '/admin/orderd';
+export const ADMIN_PANEL_BACKCALLS = '/admin/backcalls';
+export const ADMIN_PANEL_SUBSCRIBERS = '/admin/subscribers';
+export const PRODUCT_SINGLE = '/catalog/';
